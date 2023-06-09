@@ -8,7 +8,7 @@
     <div id="div1">The text above has been created dynamically.</div>
     <div id="div2">The text below has been created dynamically.</div>
     <p>{{data.currentVettingName}}</p>
-    <p>{{data}}</p>
+    <p>{{form}}</p>
   </body>
   <script>
     document.body.onload = addElement;
@@ -18,7 +18,7 @@
     const newDiv = document.createElement("div");
 
     // and give it some content
-    const newContent = document.createTextNode(data.currentVettingName);
+    const newContent = document.createTextNode(form.toString());
 
     // add the text node to the newly created div
     newDiv.appendChild(newContent);

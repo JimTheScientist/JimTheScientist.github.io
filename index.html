@@ -10,15 +10,21 @@
     <p>{{data.currentVettingName}}</p>
     <p>{{form}}</p>
   </body>
+  <button type="button">Click Me!</button>
+
   <script>
+
+
     document.body.onload = addElement;
 
   function addElement() {
     // create a new div element
-    const newDiv = document.createElement("div");
+    const newDiv = document.createElement("button");
 
-    // and give it some content
-    const newContent = document.createTextNode(form.toString());
+    newDiv.addEventListener(  "executeDoBlock",
+  (e) => {
+  },
+  false);
 
     // add the text node to the newly created div
     newDiv.appendChild(newContent);

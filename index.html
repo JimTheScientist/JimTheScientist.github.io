@@ -6,6 +6,9 @@
   </head>
   <body>
     <div id="div1">The text above has been created dynamically.</div>
+    <div id="div2">The text below has been created dynamically.</div>
+    <p>{{data.currentVettingName}}</p>
+    <p>{{data}}</p>
   </body>
   <script>
     document.body.onload = addElement;
@@ -25,9 +28,4 @@
     document.body.insertBefore(newDiv, currentDiv);
   }
   </script>
-  <body>
-    <div id="div2">The text below has been created dynamically.</div>
-    <p>{{data.currentVettingName}}</p>
-    <p>{{data}}</p>
-  </body>
 </html>
